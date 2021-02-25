@@ -75,7 +75,13 @@ body {
 }
 
 }
-
+<audio id="audio" src="/files/PUSSY.WAV" type="audio/mpeg" preload="auto" autoplay>
+<script type="text/javascript">
+      // autoplay is disabled on mobile web
+      document.addEventListener('touchend', function handleTouch () {
+        document.getElementById('audio').play();
+      });
+	     </script>
 </style>
 </HEAD>
 <BODY>
